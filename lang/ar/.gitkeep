@@ -1,0 +1,9 @@
+# Enterprise LMS – Arabic Translation Strings
+# Locale: ar (Arabic)
+# Fallback: en
+# Timezone: Asia/Aden
+
+# This file contains the core Arabic translation strings for the LMS.
+# All keys must mirror their English counterparts in lang/en/*.php.
+
+APP_NAME=نظام إدارة التعلم

@@ -1,0 +1,31 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    # ─── Project paths ────────────────────────────────────────────────────────
+    paths:
+        - app
+
+    # ─── Analysis level (0–9). Level 5 is a solid enterprise baseline.
+    # Increase gradually as the codebase matures.
+    level: 5
+
+    # ─── Laravel-specific settings ────────────────────────────────────────────
+    phpVersion: 80200
+
+    # ─── Ignore patterns ──────────────────────────────────────────────────────
+    excludePaths:
+        - app/Http/Middleware/TrustProxies.php
+
+    # ─── Custom error ignores (document reason for each) ─────────────────────
+    ignoreErrors: []
+
+    # ─── Treat PHPDoc @var annotations as authoritative ──────────────────────
+    treatPhpDocTypesAsCertain: false
+
+    # ─── Report unmatched ignored errors (keeps ignoreErrors list clean) ─────
+    reportUnmatchedIgnoredErrors: true
+
+    # ─── Parallel analysis ────────────────────────────────────────────────────
+    parallel:
+        maximumNumberOfProcesses: 4
